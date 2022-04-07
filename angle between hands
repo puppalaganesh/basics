@@ -1,0 +1,5 @@
+alltimes=input()
+for i in alltimes:
+    h,m=[int(i) for i in alltimes.split(":")]
+    angle=abs((30*h)-((11*m)/2))
+print(min(angle,360-angle))
